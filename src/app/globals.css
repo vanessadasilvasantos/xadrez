@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter-VariableFont.woff2') format('woff2-variations');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+.font-inter {
+	font-family: 'Inter', system-ui, sans-serif;
+}
+@import "tailwindcss";
+
+@font-face {
+	font-family: 'Unica One';
+	src: url('/fonts/UnicaOne-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-unica {
+	font-family: 'Unica One', system-ui, sans-serif;
+}
+
+:root {
+    --c1: #F3F3F3;
+    --c2: #BFBFBF;
+    --c3: #8C8C8C;
+    --c4: #595959;
+    --c5: #262626;
+    --c6: #0D0D0D;
+    --c7: #1A1A1A;
+
+    --m1: #CBBFB3;
+    --m2: #9E866F;
+    --m3: #7C6045;
+    --m4: #553618;
+    --m5: #371E06;
+    --m6: #180C00;
+
+    --l1: #FE9C3F;
+    --l2: #C56910;
+    --l3: #803F00;
+}
