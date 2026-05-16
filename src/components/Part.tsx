@@ -10,6 +10,7 @@ type PartProps = {
   alt: string;
   title: string;
   items?: ItemType[];
+  className?: string; // Adiciona a opção de passar um className
 };
 
 function highlightText(
@@ -45,9 +46,12 @@ export default function Part({
   alt,
   title,
   items = [],
+  className = "", // Recebe o className
 }: PartProps) {
   return (
-    <div className="bg-[var(--c7)] flex rounded-[50px] w-[480px] p-[10px] gap-5">
+    <div
+      className={`bg-[var(--c7)] flex rounded-[50px] w-[480px] p-[10px] gap-5 ${className}`}
+    >
       <Image
         className="rounded-[50px] object-cover"
         src={img}
