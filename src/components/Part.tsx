@@ -50,14 +50,14 @@ export default function Part({
 }: PartProps) {
   return (
     <div
-      className={`bg-[var(--c7)] flex rounded-[50px] w-[480px] p-[10px] gap-5 ${className}`}
+      className={`bg-[var(--c7)] flex rounded-[50px] w-[600px] p-[10px] gap-5 ${className}`}
     >
       <Image
         className="rounded-[50px] object-cover"
         src={img}
         alt={alt}
-        width={200}
-        height={200}
+        width={300}
+        height={300}
       />
 
       <div className="flex flex-col">
