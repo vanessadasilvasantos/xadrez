@@ -48,7 +48,7 @@ export default function Parts() {
             },
           ]}
         />
-        <div className="flex items-center mt-[240px]">
+        <div className="flex items-center mt-[140px]">
           <Image className="mx-auto mt-[50px] mr-[-96px] pb-[100px]" src="/malha2.png" alt="Malha do tabuleiro" width={450} height={600} />
           <Part
             img="/peao.png"
@@ -74,7 +74,7 @@ export default function Parts() {
         </div>
         <Part
           img="/peao.png"
-          className="ml-[140px] mt-[180px]"
+          className="ml-[140px] mt-[90px]"
           alt="Peão"
           title="Peão"
           items={[
@@ -92,7 +92,7 @@ export default function Parts() {
             },
           ]}
         />
-        <div className="flex mx-[140px] mt-[260px] justify-between items-start">
+        <div className="flex mx-[140px] mt-[190px] justify-between items-start">
           <Title text="Rainha" className="mt-[-60px]"/>
           <Part
           className="bg-[var(--m4)]"
@@ -115,7 +115,7 @@ export default function Parts() {
             ]}
           />
       </div>
-      <div className="mt-[260px] mx-auto flex flex-col items-center">
+      <div className="mt-[190px] mx-auto flex flex-col items-center">
         <Part
           className="bg-[var(--m5)]"
             img="/peao.png"
