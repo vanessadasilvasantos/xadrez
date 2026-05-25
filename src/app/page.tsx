@@ -10,9 +10,15 @@ export default function Home() {
     <div>
       <Nav />
       <Hero />
-      <Parts />
-      <Board />
-      <Rules />
+      <section id="pecas">
+        <Parts />
+      </section>
+      <section id="tabuleiro">
+        <Board />
+      </section>
+      <section id="regras">
+        <Rules />
+      </section>
       <Footer />
     </div>
   );
