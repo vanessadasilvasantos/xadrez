@@ -10,7 +10,9 @@ type PartProps = {
   alt: string;
   title: string;
   items?: ItemType[];
-  className?: string; // Adiciona a opção de passar um className
+  className?: string;
+  'data-aos'?: string;
+  'data-aos-duration'?: string;
 };
 
 function highlightText(
@@ -46,10 +48,12 @@ export default function Part({
   alt,
   title,
   items = [],
-  className = "", // Recebe o className
+  className = "",
+  ...dataProps
 }: PartProps) {
   return (
     <div
+      {...dataProps}
       className={`bg-[var(--c7)] flex rounded-[50px] w-[600px] p-[10px] gap-5 ${className}`}
     >
       <Image

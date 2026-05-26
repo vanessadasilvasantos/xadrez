@@ -4,10 +4,12 @@ import Parts from "@/sections/Parts";
 import Board from "@/sections/Board";
 import Rules from "@/sections/Rules";
 import Footer from "@/sections/Footer";
+import AOSInit from "@/components/AOSInit";
 
 export default function Home() {
   return (
     <div>
+      <AOSInit />
       <Nav />
       <Hero />
       <section id="pecas">
