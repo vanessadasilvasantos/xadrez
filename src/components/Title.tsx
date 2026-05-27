@@ -9,7 +9,7 @@ export default function Title({ text, className = "", ...dataProps }: TitleProps
   return (
     <h1
       {...dataProps}
-      className={`text-[var(--c1)] font-unica text-[150px] max-lg:text-[130px] max-md:text-[120px] max-sm:text-[100px] ${className}`}
+      className={`text-[var(--c1)] font-unica text-[150px] max-lg:text-[130px] max-md:text-[120px] max-sm:text-[100px] max-xs:text-[80px] ${className}`}
     >
       {text}
     </h1>

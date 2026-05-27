@@ -54,22 +54,24 @@ export default function Part({
   return (
     <div
       {...dataProps}
-      className={`bg-[var(--c7)] flex rounded-[50px] w-[600px] p-[10px] gap-5 ${className}`}
+      className={`bg-[var(--c7)] flex rounded-[50px] w-[600px] max-lg:w-[500px] max-md:w-[100%] max-sm:flex-col p-[10px] max-md:p-5 gap-5 ${className}`}
     >
-      <Image
-        className="rounded-[50px] object-cover"
-        src={img}
-        alt={alt}
-        width={300}
-        height={300}
-      />
+      <div className="max-sm:w-[100%] max-sm:bg-[#fff] rounded-[50px] max-sm:justify-center max-sm:flex">
+        <Image
+          className="rounded-[50px] object-cover max-md:max-w-[200px] max-sm:w-[40%] "
+          src={img}
+          alt={alt}
+          width={300}
+          height={300}
+        />
+      </div>
 
       <div className="flex flex-col">
-        <h2 className="font-unica text-[var(--c1)] pb-[10px] text-[40px]">
+        <h2 className="font-unica text-[var(--c1)] pb-[10px] text-[40px] max-md:text-[32px] max-sm:text-[28px]">
           {title}
         </h2>
 
-        <ul className="list-disc text-inter pl-[20px] text-[var(--c1)] flex flex-col gap-4">
+        <ul className="list-disc text-inter pl-[20px] max-sm:pl-4 text-[var(--c1)] flex flex-col gap-4 max-md:text-sm">
           {items.map((item, index) => (
             <li key={index}>
               {highlightText(
