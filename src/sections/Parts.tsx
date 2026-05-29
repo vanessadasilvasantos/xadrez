@@ -84,7 +84,7 @@ const piecesData = [
 
 export default function Parts() {
   return (
-    <div className="flex flex-col gap-12 max-md:gap-10 max-sm:gap-8 mt-[300px] max-md:mt-20 max-sm:mt-16 max-sm:mx-4">
+    <div className="flex flex-col gap-12 max-md:gap-10 max-sm:gap-8 mt-[300px] max-md:mt-20 max-sm:mt-[180px] max-sm:mx-4">
       {/* Desktop layout */}
       <div className="hidden md:flex flex-col gap-12">
         <div className="flex mx-[140px] max-lg:mx-[80px] justify-between items-start">
@@ -136,7 +136,7 @@ export default function Parts() {
 
       {/* Rainha and Rei section - stays the same on all screens */}
       <div className="flex mx-[140px] max-lg:mx-[80px] max-md:mx-6 max-sm:mx-0 mt-[190px] max-md:mt-12 max-sm:mt-8 justify-between items-start max-md:flex-col max-md:gap-6">
-        <Title data-aos="slide-in-left" data-aos-duration="800" text="Rainha" className="mt-[-60px] max-md:mt-0"/>
+        <Title data-aos="slide-in-left" data-aos-duration="800" text="Rainha" className="mt-[-60px] max-md:mt-0 max-sm:mt-[80px]"/>
         <Part data-aos="slide-in-right" data-aos-delay="150" data-aos-duration="800"
         className="bg-[var(--m4)]"
           img="/peao.png"
@@ -158,7 +158,7 @@ export default function Parts() {
           ]}
         />
       </div>
-      <div className="mt-[190px] max-md:mt-12 max-sm:mt-8 mx-auto flex flex-col items-center">
+      <div className="mt-[190px] max-md:mt-12 max-sm:mt-8 mx-auto flex flex-col items-center max-sm:w-[100%] max-sm:mt-[220px]">
         <Part data-aos="fade-in" data-aos-duration="800"
           className="bg-[var(--m5)]"
             img="/peao.png"
@@ -179,7 +179,7 @@ export default function Parts() {
               },
             ]}
           />
-          <Title data-aos="fade-in" data-aos-delay="200" data-aos-duration="800" text="Rei" className="text-[550px] text-transparent bg-clip-text bg-gradient-to-b from-[var(--c2)] via-[var(--c1)] to-[#fafafa] mt-[-180px] max-lg:text-[450px] max-md:text-[250px] max-md:mt-[-100px] max-sm:text-[180px] max-sm:mt-[-80px]"/>
+          <Title data-aos="fade-in" data-aos-delay="200" data-aos-duration="800" text="Rei" className="text-[550px] text-transparent bg-clip-text bg-gradient-to-b from-[var(--c2)] via-[var(--c1)] to-[#fafafa] mt-[-180px] max-lg:text-[450px] max-md:text-[250px] max-md:mt-[-100px] max-sm:text-[320px] max-sm:mt-[-120px]"/>
       </div>
     </div>
   );
