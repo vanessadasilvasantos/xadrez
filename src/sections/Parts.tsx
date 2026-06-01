@@ -126,7 +126,7 @@ export default function Parts() {
 
       {/* Mobile layout - Carousel */}
       <div className="md:hidden flex flex-col gap-8">
-        <div className="flex justify-center">
+        <div className="flex">
           <Title data-aos="slide-in-left" data-aos-duration="800" text="Peças" className="mt-0"/>
         </div>
         <div data-aos="fade-in" data-aos-duration="800">
