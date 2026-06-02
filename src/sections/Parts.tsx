@@ -24,59 +24,58 @@ const piecesData = [
     ],
   },
   {
-    img: "/peao.png",
-    alt: "Peão",
-    title: "Peão",
+    img: "/torre.png",
+    alt: "torre",
+    title: "Torre",
     items: [
       {
-        text: "Avança uma casa por vez.",
-        highlights: ["uma casa"],
+        text: "Move em linhas retas.",
+        highlights: ["linhas"],
       },
       {
-        text: "Captura em diagonal.",
-        highlights: ["diagonal"],
+        text: "Anda vertical e horizontal.",
+        highlights: ["vertical", "horizontal"],
       },
       {
-        text: "Pode virar outra peça.",
-        highlights: ["virar"],
+        text: "Muito forte no final do jogo.",
+        highlights: ["forte"],
       },
     ],
   },
   {
-    img: "/peao.png",
-    alt: "Peão",
-    title: "Peão",
+    img: "/bispo.png",
+    alt: "bispo",
+    title: "Bispo",
     items: [
       {
-        text: "Avança uma casa por vez.",
-        highlights: ["uma casa"],
+        text: "Move em diagonais.",
+        highlights: ["diagonais"],
       },
       {
-        text: "Captura em diagonal.",
-        highlights: ["diagonal"],
+        text: "Permanece na mesma cor.",
+        highlights: ["mesma cor"],
       },
       {
-        text: "Pode virar outra peça.",
-        highlights: ["virar"],
+        text: "Boa peça de longo alcance."
       },
     ],
   },
   {
-    img: "/peao.png",
-    alt: "Peão",
-    title: "Peão",
+    img: "/cavaloPeca.png",
+    alt: "cavalo",
+    title: "Cavalo",
     items: [
       {
-        text: "Avança uma casa por vez.",
-        highlights: ["uma casa"],
+        text: "Move em formato de 'L'.",
+        highlights: ["'L'"],
       },
       {
-        text: "Captura em diagonal.",
-        highlights: ["diagonal"],
+        text: "Pode pular outras peças.",
+        highlights: ["pular"],
       },
       {
-        text: "Pode virar outra peça.",
-        highlights: ["virar"],
+        text: "Ótimo em posições fechadas.",
+        highlights: ["fechadas"],
       },
     ],
   },
@@ -85,7 +84,6 @@ const piecesData = [
 export default function Parts() {
   return (
     <div className="flex flex-col gap-12 max-md:gap-10 max-sm:gap-8 mt-[300px] max-md:mt-20 max-sm:mt-[180px] max-sm:mx-4">
-      {/* Desktop layout */}
       <div className="hidden md:flex flex-col gap-12">
         <div className="flex mx-[140px] max-lg:mx-[80px] justify-between items-start">
           <Title data-aos="slide-in-left" data-aos-duration="800" text="Peças" className="mt-[-60px]"/>
@@ -98,33 +96,32 @@ export default function Parts() {
         </div>
         <Image className="ml-auto" src="/Malha.png" alt="Malha do tabuleiro" width={250} height={400} />
         <Part data-aos="slide-in-left" data-aos-delay="150" data-aos-duration="800"
-            img="/peao.png"
+            img="/torre.png"
             className="ml-[140px] max-lg:ml-[80px]"
-            alt="Peão"
-            title="Peão"
+            alt="Torre"
+            title="Torre"
             items={piecesData[1].items}
           />
         <div className="flex items-center gap-6 mt-[140px]">
           <Image className="mx-auto mt-[50px] mr-[-96px] pb-[100px]" src="/malha2.png" alt="Malha do tabuleiro" width={450} height={600} />
           <Part data-aos="slide-in-right" data-aos-duration="800"
-            img="/peao.png"
+            img="/bispo.png"
             className="mx-auto"
-            alt="Peão"
-            title="Peão"
+            alt="Bispo"
+            title="Bispo"
             items={piecesData[2].items}
           />
           <Image className="mx-auto mt-[50px] ml-[-120px] pb-[100px]" src="/malha2.png" alt="Malha do tabuleiro" width={450} height={400} />
         </div>
         <Part data-aos="slide-in-right" data-aos-delay="150" data-aos-duration="800"
-          img="/peao.png"
+          img="/cavaloPeca.png"
           className="ml-[140px] max-lg:ml-[80px] mt-[90px]"
-          alt="Peão"
-          title="Peão"
+          alt="Cavalo"
+          title="Cavalo"
           items={piecesData[3].items}
         />
       </div>
 
-      {/* Mobile layout - Carousel */}
       <div className="md:hidden flex flex-col gap-8">
         <div className="flex">
           <Title data-aos="slide-in-left" data-aos-duration="800" text="Peças" className="mt-0"/>
@@ -134,7 +131,6 @@ export default function Parts() {
         </div>
       </div>
 
-      {/* Rainha and Rei section - stays the same on all screens */}
       <div className="flex mx-[140px] max-lg:mx-[80px] max-md:mx-6 max-sm:mx-0 mt-[190px] max-md:mt-12 max-sm:mt-8 justify-between items-start max-md:flex-col max-md:gap-6">
         <Title data-aos="slide-in-left" data-aos-duration="800" text="Rainha" className="mt-[-60px] max-md:mt-0 max-sm:mt-[80px]"/>
         <Part data-aos="slide-in-right" data-aos-delay="150" data-aos-duration="800"
